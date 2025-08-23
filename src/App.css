@@ -1,0 +1,14 @@
+.ant-notification {
+    box-sizing: border-box;
+    margin: 3rem !important;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: 'tnum';
+    position: fixed;
+    z-index: 1010;
+    margin-right: 24px;
+  }
