@@ -3,9 +3,8 @@
     "version": "0.1.0",
     "private": true,
     "engines": {
-        "node": "16.13.1",
-        "npm": "8.1.2"
-    },
+        "node": "20.17.0"
+      },
     "dependencies": {
         "@ant-design/icons": "^4.7.0",
         "@coreui/chartjs": "^2.0.0",
