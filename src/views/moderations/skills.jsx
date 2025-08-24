@@ -79,7 +79,7 @@ const Admins = (props) => {
 
 
     const createskill = () => {
-        if (name && icon && color && image) {
+        if (name && color) {
             setLoad(true);
             axios
                 .post(
@@ -97,7 +97,7 @@ const Admins = (props) => {
                     }
                 )
                 .then((res) => {
-                    if (res.status === 201) {
+                    if (res.status === 200) {
                         setLoad(false);
                         setMsg("Skill Added Successfully");
                         setAddAdmin(false);
