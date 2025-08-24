@@ -440,12 +440,12 @@ const Admins = (props) => {
                                 ),
                                 image: (item) => (
                                     <td>
-                                        <img src={item?.image}  width="100px  />
+                                        <img src={item?.image}  width="100px"  />
                                     </td>
                                 ),
                                 icon: (item) => (
                                     <td>
-                                        <img src={item?.icon} width="100px />
+                                        <img src={item?.icon} width="100px" />
 
                                     </td>
                                 ),
