@@ -96,7 +96,7 @@ const Admins = (props) => {
                     }
                 )
                 .then((res) => {
-                    if (res.status === 201) {
+                    if (res.status === 200) {
                         setLoad(false);
                         setMsg("Category Added Successfully");
                         setAddAdmin(false);
@@ -154,6 +154,9 @@ const Admins = (props) => {
                 }
             )
             .then((res) => {
+                        setLoad(false);
+                                    setMsg("Category Created Successfully");
+
                 if (res.status === 200) {
                     setLoad(false);
                     setMsg("Admin User Updated Successfully");
@@ -437,12 +440,12 @@ const Admins = (props) => {
                                 ),
                                 image: (item) => (
                                     <td>
-                                        <img src={item?.image} />
+                                        <img src={item?.image}  width="100px  />
                                     </td>
                                 ),
                                 icon: (item) => (
                                     <td>
-                                        <img src={item?.icon} />
+                                        <img src={item?.icon} width="100px />
 
                                     </td>
                                 ),
