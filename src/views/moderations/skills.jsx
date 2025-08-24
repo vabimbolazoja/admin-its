@@ -83,7 +83,7 @@ const Admins = (props) => {
             setLoad(true);
             axios
                 .post(
-                    `${config.baseUrl}/api/vGated/admin/category-moderation/categories/${categoryId}/skill`,
+                    `${config.baseUrl}/api/vGated/admin/category-moderation/categories/${categoryId}/skills`,
                     {
                         "name": name,
                         "chipColor": color,
@@ -310,7 +310,7 @@ const Admins = (props) => {
             okType: "danger",
             cancelText: "No",
             onOk() {
-                if (item?.status === "INACTIVE") {
+                if (item === "INACTIVE") {
                     skillEnable();
                 } else {
                     skillDisable();
